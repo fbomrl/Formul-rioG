@@ -6,7 +6,14 @@ h1 {
     color: #faeb1d;
     font-family: 'Righteous', cursive;
 }
+label{
+    color:#146342;
+}
 
+input{
+    font-weight: bolder;  
+    background-color: rgb(255 248 230);
+}
 
 body {
     background: url("../img/1561054.jpg");
@@ -34,7 +41,7 @@ fieldset {
 }
 legend.titulo{
     font-family: 'Righteous', cursive;
-    color: #146342;
+    color: #0a3b27;
 }
 fieldset.sexo{
     width: 83%;
