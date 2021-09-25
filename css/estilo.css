@@ -3,9 +3,10 @@
 
 h1 {
     text-align: center;
-    color: #146342;
+    color: #faeb1d;
     font-family: 'Righteous', cursive;
 }
+
 
 body {
     background: url("../img/1561054.jpg");
@@ -25,14 +26,20 @@ form {
 fieldset {
     width: 83%;
     margin-left: 6%;
-    border-color: #146342;
+    border-style: dashed ;
+    border-color: yellowgreen;
     margin-bottom: 28px;
     margin-top: 28px;
     font-family: 'Righteous', cursive;
 }
+legend.titulo{
+    font-family: 'Righteous', cursive;
+    color: #146342;
+}
 fieldset.sexo{
     width: 83%;
     margin-left: 0%;
+    border-style: dashed ;
     border-color: #146342;
     margin-bottom: 28px;
     margin-top: 28px;
@@ -41,6 +48,17 @@ fieldset.sexo{
 
 footer.footer{
     text-align: center;
-    color: #146342;
+    color: #faeb1d;
     font-family: 'Righteous', cursive;
+}
+
+div.button{
+    float: right;
+    margin-top: -4%;
+    margin-right: 7%;
+}
+div.button-limpar{
+    float: right;
+    margin-top: -4%;
+    margin-right: 19%;
 }

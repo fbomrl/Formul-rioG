@@ -1,0 +1,11 @@
+imagens:
+logo_linkedin - https://www.linkedin.com/feed/
+1561054 - https://wallpaperaccess.com/dna
+dna - https://querobolsa.com.br/enem/biologia/dna-acido-desoxirribonucleico
+
+Guia para Aprendizado do projeto:
+Gama Academy;
+CursoemVídeo;
+https://www.w3schools.com/css/
+https://www.w3schools.com/html/
+https://www.devmedia.com.br/alert-em-javascript/37208

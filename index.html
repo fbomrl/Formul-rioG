@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title> Cadastro Pessoal </title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <link rel="shortcut icon" href="" />
+    <link rel="shortcut icon" href="img/dna.png" />
 </head>
 
 <body>
@@ -13,77 +13,102 @@
         <h1>CADASTRO DADOS PESSOAIS</h1>
 
     </header>
-    <form method="POST">
-        <div>
-            <fieldset>
-                <legend>Identificação</legend>
-                <p><label for="cnome">Nome: <input type="text" name="tnome" id="cnome" size="50" maxlength="50"
-                            placeholder="Nome Completo" required/></label></p>
-                <p><label for="crg"></p>RG: <input type="text" name="trg" id="crg" size="10"maxlength="10"placeholder="00000000-0"> </label>
-                <label for="ccpf">CPF: 
-                    <input type="text" name="tcpf" id="ccpf" size="14"maxlength="14"placeholder="000.000.000-00" onblur="validacao()" required></label></p>
-                <script src="jv/ValidadorCPF.js"></script>
+    <main>
+        <form method="POST" id="fomulario">
+            <div>
+                <fieldset>
+                    <legend class="titulo">Identificação</legend>
+                    <p><label for="cnome">Nome: <input type="text" name="tnome" id="cnome" size="50" maxlength="50"
+                                placeholder="Nome Completo" required /></label></p>
+                    <p><label for="crg"></p>RG: <input type="text" name="trg" id="crg" size="10" maxlength="10"
+                        placeholder="00000000-0"> </label>
+                    <label for="ccpf">CPF:
+                        <input type="text" name="tcpf" id="ccpf" size="14" maxlength="14" placeholder="000.000.000-00"
+                            onblur="validacao()" required></label></p>
 
-                <fieldset class="sexo">
-                    <legend> SEXO:</legend>
-                    <input type="radio" name="tsexo" id="cmasc" /><label for="cmasc">Masculino</label>
-                    <input type="radio" name="tsexo" id="cfem" /><label for="cfem">Feminino</label>
-                    <input type="radio" name="tsexo" id="cout" /><label for="cout">Outros</label>
+
+                    <fieldset class="sexo">
+                        <legend class="titulo"> Sexo:</legend>
+                        <input type="radio" name="tsexo" id="cmasc" /><label for="cmasc">Masculino</label>
+                        <input type="radio" name="tsexo" id="cfem" /><label for="cfem">Feminino</label>
+                        <input type="radio" name="tsexo" id="cout" /><label for="cout">Outros</label>
+                    </fieldset>
+                    <p><label for="">Data de Nascimento:<input type="date" name="tdata" id="cdata" /> </label></p>
                 </fieldset>
-                <p><label for="">Data de Nascimento:<input type="date" name="tdata" id="cdata" /> </label></p>
-            </fieldset>
-        </div>
-        <div>
-            <fieldset>
-                <legend>Endereço</legend>
-                <p><label for="crua">Logradouro: <input type="text" name="trua" id="crua" size="50" maxlength="50"
-                            placeholder="Rua, Avenida, Travessa..." /></label>
-                <label for="cnum">Nº: <input type="number" name="tnum" id="cnum" min="0" max="99999"
-                            placeholder="00" /></label></p>
-                <p><label for="ccomp">Complemento: <input type="text" name="tcomp" id="ccomp" size="50" maxlength="50"
-                            placeholder="Casa, Ap, Bloco, Condomínio..." /></label></p>
-                <p><label for="ccep">CEP: <input type="text" name="tcep" id="ccep" required></label></p>
-                <p><label for="cbai">Bairro: <input type="text" name="tbai" id="cbai" size="30" maxlength="30"></label>
-                </p>
-                <p><label for="cest">Estado:<select name="test" id="cest"></label></p>
-                <option>Acre</option>
-                <option>São Paulo</option>
-                </select>
-                <p><label for="ccid">Cidade: <input type="text" name="tcid" id="ccid" size="50" maxlength="50"> </label>
-                </p>
-            </fieldset>
-        </div>
-        <div>
-            <fieldset>
-                <legend>Contato</legend>
-                <p><label for="ctel">Tel: <input type="tel" name="ttel" id="ctel" size="13" maxlength="13"
-                            placeholder="(00)0000-0000"> </label></p>
-                <p><label for="ccel">Cel: <input type="tel" name="tcel" id="ccel" size="14" maxlength="14"
-                            placeholder="(00)00000-0000"> </label></p>
-                <p><label for="crec">Rec: <input type="tel" name="trec" id="crec" size="14" maxlength="14"
-                            placeholder="(00)00000-0000"></label></p>
-                <p><label for="cemail">E-mail:<input type="email" name="temail" id="cemail" size="50" maxlength="50"
-                            placeholder="email@example.com" /></label></p>
-            </fieldset>
-        </div>
-        <div class="button">
-            <button type="submit" >Enviar sua mensagem</button>
-        </div>
-    </form>
+            </div>
+            <div>
+                <fieldset>
+                    <legend class="titulo">Endereço</legend>
+                    <p><label for="crua">Logradouro: <input type="text" name="trua" id="crua" size="50" maxlength="50"
+                                placeholder="Rua, Avenida, Travessa..." required /></label>
+                        <label for="cnum">Nº: <input type="number" name="tnum" id="cnum" min="0" max="99999"
+                                placeholder="00" required /></label>
+                    </p>
+                    <p><label for="ccomp">Complemento: <input type="text" name="tcomp" id="ccomp" size="50"
+                                maxlength="50" placeholder="Casa, Ap, Bloco, Condomínio..." /></label></p>
+                    <p><label for="ccep">CEP: <input type="text" name="tcep" id="ccep" placeholder="00000-000"
+                                required></label></p>
+                    <p><label for="cbai">Bairro: <input type="text" name="tbai" id="cbai" size="30"
+                                maxlength="30"></label>
+                    </p>
+                    <p><label for="cest">Estado:<select name="test" id="cest"></label></p>
+                    <option>Acre</option>
+                    <option>São Paulo</option>
+                    </select>
+                    <p><label for="ccid">Cidade: <input type="text" name="tcid" id="ccid" size="50" maxlength="50">
+                        </label>
+                    </p>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend class="titulo">Contato</legend>
+                    <p><label for="ctel">Tel: <input type="tel" name="ttel" id="ctel" size="13" maxlength="13"
+                                placeholder="(00)0000-0000"> </label></p>
+                    <p><label for="ccel">Cel: <input type="tel" name="tcel" id="ccel" size="14" maxlength="14"
+                                placeholder="(00)00000-0000" required /> </label></p>
+                    <p><label for="crec">Rec: <input type="tel" name="trec" id="crec" size="14" maxlength="14"
+                                placeholder="(00)00000-0000"></label></p>
+                    <p><label for="cemail">E-mail:<input type="email" name="temail" id="cemail" size="50" maxlength="50"
+                                placeholder="email@example.com" /></label></p>
+                </fieldset>
+            </div>
+            <div class="button-limpar">
+                <button type="button" onclick="limpar()" value="Exibir Alerta de Confirmação">Limpar</button>
+            </div>
 
-    <div class="container page-header">
-        <div id="success" class="alert alert-success" style="display: none;" role="alert">
-            <strong>Oba!</strong> Seu CPF é válido
-        </div>
-        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
-            <strong>Ops!</strong> Seu CPF não é válido
-        </div>
+            <div class="button">
+                <button type="submit" onclick="envio()" value="Exibir Alerta">Enviar</button>
+            </div>
+
+        </form>
+    </main>
+
     </div>
-    
+
     <footer class="footer">
-        <p>Fabio Meireles da Silva <a id ="linkedin"href="https://www.linkedin.com/in/fabio-meireles-silva/" target="_blank"><img class="logo" src="img/logo_linkedin.png" alt = "logo linkedin"/></a></p>
+        <p>Fabio Meireles da Silva <a id="linkedin" href="https://www.linkedin.com/in/fabio-meireles-silva/"
+                target="_blank"><img class="logo" src="img/logo_linkedin.png" alt="logo linkedin" /></a></p>
         <p> &copy; Todos os direitos reservados. </p>
     </footer>
+
+    <script src="jv/ValidadorCPF.js"></script>
+    <script>
+        function limpar() {
+            var x;
+            var r = confirm("Você tem certeza que deseja limpar todos os campos? ")
+            if (r == true) {
+                document.getElementById("fomulario").reset();
+            }
+
+        }
+
+        function envio() {
+            alert("Obrigado por preencher seus dados! ");
+        }
+
+    </script>
+
 </body>
 
 
