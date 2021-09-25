@@ -13,10 +13,15 @@
         </header>
         <form>
         <fieldset><legend>Identificação</legend>
-            Nome:
-            RG:
-            CPF:
-            SEXO:
+            <p><label for="cnome">Nome: <input type="text" name="tnome" id="cnome" size="50" maxlength="50" placeholder="Nome Completo"/></label></p>
+            <p></p>RG:</p>
+            <p>CPF:</p>
+            <fieldset class="sexo"><legend> SEXO:</legend>
+            <input type="radio" name="tsexo" id="cmasc"/><label for="cmasc">Masculino</label>
+            <input type="radio" name="tsexo" id="cfem"/><label for="cfem">Feminino</label>
+            <input type="radio" name="tsexo" id="cout"/><label for="cout">Outros</label>
+        </fieldset> 
+            <p>Data de Nascimento:</p>
         </fieldset>
         <fieldset><legend>Endereço</legend>
             Rua:
@@ -28,13 +33,14 @@
             Estado:
         </fieldset>
         <fieldset><legend>Contato</legend> 
-        Tel:
-        Cel:
-        Rec:
+            Tel:
+            Cel:
+            Rec:
+            <p><label for="cemail">E-mail:<input type="email" name="temail" id="cemail" size="50" maxlength="50" placeholder="email@example.com"/></label></p>
         </fieldset>
         </form>
         <footer class="footer">
-            
+
             <p> &copy; Todos os direitos reservados. </p>
         </footer>
     </body>
