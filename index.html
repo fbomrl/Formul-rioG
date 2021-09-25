@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <title> Cadastro Pessoal </title>
@@ -7,43 +8,69 @@
     <link rel="shortcut icon" href="" />
 </head>
 
-    <body>
-        <header>
+<body>
+    <header>
 
-        </header>
-        <form method="POST">
-        <fieldset><legend>Identificação</legend>
-            <p><label for="cnome">Nome: <input type="text" name="tnome" id="cnome" size="50" maxlength="50" placeholder="Nome Completo"/></label></p>
-            <p></p>RG:</p>
-            <p>CPF:</p>
-            <fieldset class="sexo"><legend> SEXO:</legend>
-            <input type="radio" name="tsexo" id="cmasc"/><label for="cmasc">Masculino</label>
-            <input type="radio" name="tsexo" id="cfem"/><label for="cfem">Feminino</label>
-            <input type="radio" name="tsexo" id="cout"/><label for="cout">Outros</label>
-        </fieldset> 
-            <p><label for="">Data de Nascimento:<input type="date" name="tdata" id="cdata"/> </label></p>
-        </fieldset>
-        <fieldset><legend>Endereço</legend>
-            <p><label for="crua">Logradouro: <input type="text" name="trua" id="crua" size="50" maxlength="50" placeholder="Rua, Avenida, Travessa..."/></label></p>
-            <p><label for="cnum">Nº: <input type="number" name="tnum" id="cnum" min="0" max="99999" placeholder="00"/></label></p>
-            <p><label for="ccomp">Complemento: <input type="text" name="tcomp" id="ccomp" size="50" maxlength="50" placeholder="Casa, Ap, Bloco, Condomínio..."/></label></p>
-            <p><label for="ccep">CEP:</label></p>
-            <p><label for="cbai">Bairro:</label></p>
-            <p><label for="cest">Estado:</label></p>
-            <p><label for="ccid">Cidade:</label></p>
-        </fieldset>
-        <fieldset><legend>Contato</legend> 
-            <p><label for="ctel">Tel:</label></p>
-            <p><label for="ccel">Cel:</label></p>
-            <p><label for="crec">Rec:</label></p>
-            <p><label for="cemail">E-mail:<input type="email" name="temail" id="cemail" size="50" maxlength="50" placeholder="email@example.com"/></label></p>
-        </fieldset>
-        </form>
-        <footer class="footer">
+    </header>
+    <form method="POST">
+        <div>
+            <fieldset>
+                <legend>Identificação</legend>
+                <p><label for="cnome">Nome: <input type="text" name="tnome" id="cnome" size="50" maxlength="50"
+                            placeholder="Nome Completo" /></label></p>
+                <p></p>RG:</p>
+                <p>CPF:</p>
+                <fieldset class="sexo">
+                    <legend> SEXO:</legend>
+                    <input type="radio" name="tsexo" id="cmasc" /><label for="cmasc">Masculino</label>
+                    <input type="radio" name="tsexo" id="cfem" /><label for="cfem">Feminino</label>
+                    <input type="radio" name="tsexo" id="cout" /><label for="cout">Outros</label>
+                </fieldset>
+                <p><label for="">Data de Nascimento:<input type="date" name="tdata" id="cdata" /> </label></p>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Endereço</legend>
+                <p><label for="crua">Logradouro: <input type="text" name="trua" id="crua" size="50" maxlength="50"
+                            placeholder="Rua, Avenida, Travessa..." /></label></p>
+                <p><label for="cnum">Nº: <input type="number" name="tnum" id="cnum" min="0" max="99999"
+                            placeholder="00" /></label></p>
+                <p><label for="ccomp">Complemento: <input type="text" name="tcomp" id="ccomp" size="50" maxlength="50"
+                            placeholder="Casa, Ap, Bloco, Condomínio..." /></label></p>
+                <p><label for="ccep">CEP:</label></p>
+                <p><label for="cbai">Bairro: <input type="text" name="tbai" id="cbai" size="50" maxlength="50"></label>
+                </p>
+                <p><label for="cest">Estado:<select name="test" id="cest"></label></p>
+                <option>Acre</option>
+                <option>São Paulo</option>
+                </select>
+                <p><label for="ccid">Cidade: <input type="text" name="tcid" id="ccid" size="50" maxlength="50"> </label>
+                </p>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Contato</legend>
+                <p><label for="ctel">Tel: <input type="tel" name="ttel" id="ctel" size="13" maxlength="13"
+                            placeholder="(00)0000-0000"> </label></p>
+                <p><label for="ccel">Cel: <input type="tel" name="tcel" id="ccel" size="14" maxlength="14"
+                            placeholder="(00)00000-0000"> </label></p>
+                <p><label for="crec">Rec: <input type="tel" name="trec" id="crec" size="14" maxlength="14"
+                            placeholder="(00)00000-0000"></label></p>
+                <p><label for="cemail">E-mail:<input type="email" name="temail" id="cemail" size="50" maxlength="50"
+                            placeholder="email@example.com" /></label></p>
+            </fieldset>
+        </div>
+        <div class="button">
+            <button type="submit">Enviar sua mensagem</button>
+        </div>
+    </form>
+    <footer class="footer">
 
-            <p> &copy; Todos os direitos reservados. </p>
-        </footer>
-    </body>
+        <p> &copy; Todos os direitos reservados. </p>
+    </footer>
+</body>
 
 
 
