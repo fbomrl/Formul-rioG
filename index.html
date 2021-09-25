@@ -11,7 +11,7 @@
         <header>
 
         </header>
-        <form>
+        <form method="POST">
         <fieldset><legend>Identificação</legend>
             <p><label for="cnome">Nome: <input type="text" name="tnome" id="cnome" size="50" maxlength="50" placeholder="Nome Completo"/></label></p>
             <p></p>RG:</p>
@@ -21,21 +21,21 @@
             <input type="radio" name="tsexo" id="cfem"/><label for="cfem">Feminino</label>
             <input type="radio" name="tsexo" id="cout"/><label for="cout">Outros</label>
         </fieldset> 
-            <p>Data de Nascimento:</p>
+            <p><label for="">Data de Nascimento:<input type="date" name="tdata" id="cdata"/> </label></p>
         </fieldset>
         <fieldset><legend>Endereço</legend>
-            Rua:
-            Nº:
-            Complemento:
-            CEP:
-            Bairro:
-            Cidade:
-            Estado:
+            <p><label for="crua">Logradouro: <input type="text" name="trua" id="crua" size="50" maxlength="50" placeholder="Rua, Avenida, Travessa..."/></label></p>
+            <p><label for="cnum">Nº: <input type="number" name="tnum" id="cnum" min="0" max="99999" placeholder="00"/></label></p>
+            <p><label for="ccomp">Complemento: <input type="text" name="tcomp" id="ccomp" size="50" maxlength="50" placeholder="Casa, Ap, Bloco, Condomínio..."/></label></p>
+            <p><label for="ccep">CEP:</label></p>
+            <p><label for="cbai">Bairro:</label></p>
+            <p><label for="cest">Estado:</label></p>
+            <p><label for="ccid">Cidade:</label></p>
         </fieldset>
         <fieldset><legend>Contato</legend> 
-            Tel:
-            Cel:
-            Rec:
+            <p><label for="ctel">Tel:</label></p>
+            <p><label for="ccel">Cel:</label></p>
+            <p><label for="crec">Rec:</label></p>
             <p><label for="cemail">E-mail:<input type="email" name="temail" id="cemail" size="50" maxlength="50" placeholder="email@example.com"/></label></p>
         </fieldset>
         </form>
