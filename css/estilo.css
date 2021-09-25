@@ -14,6 +14,14 @@ input{
     font-weight: bolder;  
     background-color: rgb(255 248 230);
 }
+select{
+    font-weight: bolder;  
+    background-color: rgb(255 248 230);
+}
+option{
+    font-weight: bolder;  
+    background-color: rgb(255 248 230);
+}
 
 body {
     background: url("../img/1561054.jpg");
