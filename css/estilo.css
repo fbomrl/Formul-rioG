@@ -1,2 +1,46 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+h1 {
+    text-align: center;
+    color: #146342;
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    background: url("../img/1561054.jpg");
+    background-color: lightgray;
+    margin-top: 5%;
+}
+
+form {
+    width: 60%;
+    margin-left: 19%;
+    border-style: double ;
+    border-color: #146342;
+    background-color: rgb(238, 216, 155);
+    border-radius: 5%;
+}
+
+fieldset {
+    width: 83%;
+    margin-left: 6%;
+    border-color: #146342;
+    margin-bottom: 28px;
+    margin-top: 28px;
+    font-family: 'Righteous', cursive;
+}
+fieldset.sexo{
+    width: 83%;
+    margin-left: 0%;
+    border-color: #146342;
+    margin-bottom: 28px;
+    margin-top: 28px;
+    font-family: 'Righteous', cursive;
+}
+
+footer.footer{
+    text-align: center;
+    color: #146342;
+    font-family: 'Righteous', cursive;
+}

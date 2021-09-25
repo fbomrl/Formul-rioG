@@ -19,8 +19,8 @@
                 <legend>Identificação</legend>
                 <p><label for="cnome">Nome: <input type="text" name="tnome" id="cnome" size="50" maxlength="50"
                             placeholder="Nome Completo" required/></label></p>
-                <p><label for="crg"></p>RG: <input type="text" name="trg" id="crg" size="10"maxlength="10"placeholder="00000000-0"> </label></p>
-                <p><label for="ccpf">CPF: 
+                <p><label for="crg"></p>RG: <input type="text" name="trg" id="crg" size="10"maxlength="10"placeholder="00000000-0"> </label>
+                <label for="ccpf">CPF: 
                     <input type="text" name="tcpf" id="ccpf" size="14"maxlength="14"placeholder="000.000.000-00" onblur="validacao()" required></label></p>
                 <script src="jv/ValidadorCPF.js"></script>
 
@@ -37,13 +37,13 @@
             <fieldset>
                 <legend>Endereço</legend>
                 <p><label for="crua">Logradouro: <input type="text" name="trua" id="crua" size="50" maxlength="50"
-                            placeholder="Rua, Avenida, Travessa..." /></label></p>
-                <p><label for="cnum">Nº: <input type="number" name="tnum" id="cnum" min="0" max="99999"
+                            placeholder="Rua, Avenida, Travessa..." /></label>
+                <label for="cnum">Nº: <input type="number" name="tnum" id="cnum" min="0" max="99999"
                             placeholder="00" /></label></p>
                 <p><label for="ccomp">Complemento: <input type="text" name="tcomp" id="ccomp" size="50" maxlength="50"
                             placeholder="Casa, Ap, Bloco, Condomínio..." /></label></p>
                 <p><label for="ccep">CEP: <input type="text" name="tcep" id="ccep" required></label></p>
-                <p><label for="cbai">Bairro: <input type="text" name="tbai" id="cbai" size="50" maxlength="50"></label>
+                <p><label for="cbai">Bairro: <input type="text" name="tbai" id="cbai" size="30" maxlength="30"></label>
                 </p>
                 <p><label for="cest">Estado:<select name="test" id="cest"></label></p>
                 <option>Acre</option>
