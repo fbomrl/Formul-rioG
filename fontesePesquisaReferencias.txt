@@ -1,18 +1,3 @@
-Fabio Meireles da Silva.
-
-O Formulário tem como objetivo coletar as informações solicitados ao usuário com a 
-finalidade de armazena-los em um futuro banco de dados.
-Tem como funcionalidade HTML5 com javascript utilizando Jquery para mask de algumas informações e
-tambem para a localização de informações de endereço pelo CEP.
-
-
-
-
-
-
-
-REFERENCIAS: 
-
 imagens:
 logo_linkedin - https://www.linkedin.com/feed/
 1561054 - https://wallpaperaccess.com/dna
