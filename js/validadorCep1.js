@@ -1,15 +1,3 @@
-/*'use strict'
-
-const pesquisarCep = async() => {
-    const ccep = document.getElementById('ccep').value;
-    const url = 'http://viacep.com.br/ws/${ccep}/json/';
-    const dados = await fetch(url);
-    const endereco = await dados.json();
-    console.log (endereco)
-}
-
-document.getElementById('ccep').addEventListener('focusout', pesquisarCep);*/
-
 'use strict';
 
 const limparFormulario = (endereco) =>{
