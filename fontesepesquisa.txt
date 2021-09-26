@@ -9,6 +9,7 @@ CursoemVídeo;
 https://www.w3schools.com/css/
 https://www.w3schools.com/html/
 https://www.devmedia.com.br/alert-em-javascript/37208
+https://www.youtube.com/watch?v=imk6Y0viabg
 
 Audio:
 https://www.youtube.com/watch?v=GY4mGgfc0Ag
