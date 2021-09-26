@@ -13,7 +13,7 @@
         <h1>CADASTRO DADOS PESSOAIS</h1>
     </header>
     <main>
-        <form method="POST" id="fomulario">
+        <form method="POST" method="GET" id="fomulario" action="" onsubmit="return enviar()" >
             <div>
                 <fieldset>
                     <legend class="titulo">Identificação</legend>
@@ -72,12 +72,12 @@
                 </fieldset>
             </div>
             <div class="button-limpar">
-                <button class="button" type="button" onclick="limpar()"
+                <button id="climpar" name="tlimpar" class="button" type="button" onclick="limpar()"
                     value="Exibir Alerta de Confirmação">Limpar</button>
             </div>
 
             <div class="button">
-                <button class="button" type="submit" onclick="envio()" value="Exibir Alerta"> Enviar</button>
+                <button id="cenviar" name="tenviar" class="button" type="submit" value="Exibir Alerta"> Enviar</button>
 
             </div>
 
@@ -107,7 +107,7 @@
 
         }
 
-        function envio() {
+        function enviar() {
                 alert("Obrigado por preencher seus dados! ");
 
         }
