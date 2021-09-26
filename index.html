@@ -32,7 +32,7 @@
                         <input type="radio" name="tsexo" id="cfem" /><label for="cfem">Feminino</label>
                         <input type="radio" name="tsexo" id="cout" /><label for="cout">Outros</label>
                     </fieldset>
-                    <p><label for="">Data de Nascimento: <input type="date" name="tdata" id="cdata" /> </label></p>
+                    <p><label for="cdata">Data de Nascimento: <input type="date" name="tdata" id="cdata"> </label></p>
                 </fieldset>
             </div>
             <div>
@@ -71,11 +71,11 @@
                 </fieldset>
             </div>
             <div class="button-limpar">
-                <button type="button" onclick="limpar()" value="Exibir Alerta de Confirmação">Limpar</button>
+                <button class="button" type="button" onclick="limpar()" value="Exibir Alerta de Confirmação">Limpar</button>
             </div>
 
             <div class="button">
-                <button type="submit" onclick="envio()" value="Exibir Alerta">Enviar</button>
+                <button class="button" type="submit" onclick="envio()" value="Exibir Alerta">Enviar</button>
             </div>
 
         </form>
@@ -107,6 +107,7 @@
             if (required == true){
             alert("Obrigado por preencher seus dados! ");
         }
+
         }
 
 
