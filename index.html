@@ -20,10 +20,11 @@
                     <p><label for="cnome">Nome: <input type="text" name="tnome" id="cnome" size="50" maxlength="50"
                                 placeholder="Nome Completo" required /></label></p>
                     <p><label for="crg">RG: <input type="text" name="trg" id="crg" size="10" maxlength="10"
-                        placeholder="00000000-0"> </label>
-                    <label for="ccpf">CPF:
-                        <input type="text" name="tcpf" id="ccpf" size="14" maxlength="14" placeholder="000.000.000-00"
-                            onblur="validacao()"  required></label></p>
+                                placeholder="00000000-0"> </label>
+                        <label for="ccpf">CPF:
+                            <input type="text" name="tcpf" id="ccpf" size="14" maxlength="14"
+                                placeholder="000.000.000-00" onblur="validacao()" required></label>
+                    </p>
 
 
                     <fieldset class="sexo">
@@ -39,7 +40,7 @@
                 <fieldset>
                     <legend class="titulo">Endereço</legend>
                     <p><label for="ccep">CEP: <input type="text" name="tcep" id="ccep" placeholder="00000000"
-                        onblur='pesquisarCep()' id='return' maxlength="8" required></label></p>
+                                onblur='pesquisarCep()' id='return' maxlength="8" required></label></p>
                     <p><label for="crua">Logradouro: <input type="text" name="trua" id="crua" size="35" maxlength="35"
                                 placeholder="Rua, Avenida, Travessa..." required /></label>
                         <label for="cnum">Nº: <input type="number" name="tnum" id="cnum" min="0" max="99999"
@@ -62,7 +63,7 @@
                     <legend class="titulo">Contato</legend>
                     <p><label for="ctel">Tel: <input type="tel" name="ttel" id="ctel" size="13" maxlength="13"
                                 placeholder="(00)0000-0000"> </label></p>
-                    <p><label for="ccel">Cel: <input type="tel" name="tcel" id="ccel" size="14" maxlength="14"
+                    <p><label for="ccel">Cel: <input type=" tel" name="tcel" id="ccel" size="14" maxlength="14"
                                 placeholder="(00)00000-0000" required /> </label></p>
                     <p><label for="crec">Rec: <input type="tel" name="trec" id="crec" size="14" maxlength="14"
                                 placeholder="(00)00000-0000"></label></p>
@@ -71,11 +72,13 @@
                 </fieldset>
             </div>
             <div class="button-limpar">
-                <button class="button" type="button" onclick="limpar()" value="Exibir Alerta de Confirmação">Limpar</button>
+                <button class="button" type="button" onclick="limpar()"
+                    value="Exibir Alerta de Confirmação">Limpar</button>
             </div>
 
             <div class="button">
-                <button class="button" type="submit" onclick="envio()" value="Exibir Alerta">Enviar</button>
+                <button class="button" type="submit" onclick="envio()" value="Exibir Alerta"> Enviar</button>
+
             </div>
 
         </form>
@@ -101,15 +104,13 @@
                 document.getElementById("fomulario").reset();
             }
 
+
         }
 
         function envio() {
-            if (required == true){
-            alert("Obrigado por preencher seus dados! ");
-        }
+                alert("Obrigado por preencher seus dados! ");
 
         }
-
 
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -120,8 +121,8 @@
         $("#crec").mask("(00) 00000-0000");
         $("#ccpf").mask("000.000.000-00")
         $("#crg").mask("00000000-0")
-      
-     </script>
+
+    </script>
 </body>
 
 
